@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "885424103357",
+    "firebase_url": "https://rmutsvnodemcu-9fa10.firebaseio.com",
+    "project_id": "rmutsvnodemcu-9fa10",
+    "storage_bucket": "rmutsvnodemcu-9fa10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885424103357:android:9754b793cf9c6c8f",
+        "android_client_info": {
+          "package_name": "chicha.rmutsv.ac.th.rmutsvmytimes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885424103357-jnsdk1pmfeulv07qgdr50l49n0n2mus7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chicha.rmutsv.ac.th.rmutsvmytimes",
+            "certificate_hash": "76b3efce7978fd85670553bd4f88e234e1f5ca27"
+          }
+        },
+        {
+          "client_id": "885424103357-ihpqv2sl2tdveqv5qqhf1nn6aja8n1vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_7uImtIQa_g96W1XjdPAEX-nNfrX0V4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885424103357-ihpqv2sl2tdveqv5qqhf1nn6aja8n1vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

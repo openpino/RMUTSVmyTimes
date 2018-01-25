@@ -6,6 +6,7 @@
 
     <!--Set Zero-->
     <Button
+        android:id="@+id/btnZero"
         android:text="Zero"
         android:layout_weight="1"
         android:layout_width="0dp"
@@ -14,12 +15,14 @@
     <!--on-->
 
     <Button
+        android:id="@+id/btnOn"
         android:text="On"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
     <!--off-->
     <Button
+        android:id="@+id/btnOff"
         android:text="Off"
         android:layout_weight="1"
         android:layout_width="0dp"

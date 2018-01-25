@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="chicha.rmutsv.ac.th.rmutsvmytimes.MainActivity">
 
-    <!--Content of Fragment-->
+    <!--Content of Fragment Main-->
 
      <FrameLayout
+         android:layout_weight="4"
          android:id="@+id/contentMainFragment"
          android:layout_width="match_parent"
-         android:layout_height="match_parent"/>
+         android:layout_height="0dp"/>
 
+<!--Content of Fragment Controller-->
+    <FrameLayout
+        android:id="@+id/contentControllerFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

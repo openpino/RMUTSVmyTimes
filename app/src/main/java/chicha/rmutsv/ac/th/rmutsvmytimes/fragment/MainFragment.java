@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,9 +19,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Map;
+import java.util.Random;
 
 import chicha.rmutsv.ac.th.rmutsvmytimes.GraphActivity;
 import chicha.rmutsv.ac.th.rmutsvmytimes.R;
+import chicha.rmutsv.ac.th.rmutsvmytimes.utility.PostData;
 
 /**
  * Created by Dell on 25/1/2561.
@@ -55,6 +58,26 @@ public class MainFragment extends Fragment {
                 Map map = (Map) dataSnapshot.getValue();
                 myTimesString = String.valueOf(map.get("myTimes"));
                 textView.setText(myTimesString);
+
+                // Get and Post Data From Firebase to mySQL
+                try {
+
+                    String strURL ="http://androidthai.in.th/piw/addGraphChai.php";
+                    Random random = new Random();
+                    int intx = Integer.parseInt(myTimesString);
+                    int inty = random.nextInt(10)+ intx;
+
+                    PostData postData = new PostData(getActivity());
+                    postData.execute(Integer.toString(intx),
+                            Integer.toString(inty),
+                            strURL);
+                    String strResult = postData.get();
+                    Log.d("26Jan","Result" + strResult);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
 
             } //onDataChange
 

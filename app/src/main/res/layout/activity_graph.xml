@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="chicha.rmutsv.ac.th.rmutsvmytimes.GraphActivity">
 
+    <!--Content of Fragment-->
+    <FrameLayout
+        
+        android:id="@+id/contentGraphFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </android.support.constraint.ConstraintLayout>

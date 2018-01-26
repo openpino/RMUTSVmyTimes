@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <!--Title-->
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30sp"
-        android:text="myTimes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent">
 
     <!--Content-->
-    <TextView
-        android:id="@+id/txtShowMyTimes"
-        android:textStyle="bold"
-        android:textColor="#199f07"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textSize="100sp"
-        android:text="XXX"
-        android:layout_width="wrap_content"
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="myTimes"
+            android:textSize="30sp" />
+
+        <!--Content-->
+        <TextView
+            android:id="@+id/txtShowMyTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="XXX"
+            android:textColor="#199f07"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShowGraph"
+        android:text="Show Graph"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</LinearLayout>
+
+</RelativeLayout>
